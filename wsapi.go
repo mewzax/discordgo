@@ -64,7 +64,7 @@ func (s *Session) Open() error {
 	}
 
 	// Get the gateway to use for the Websocket connection
-	s.gateway == "" {
+	if s.gateway == "" {
 		s.gateway = "wss://gateway.discord.gg/" + "?v=" + APIVersion + "&encoding=json"
 	}
 
